@@ -51,12 +51,19 @@ body {
 
 .post-text {
     position:relative;
-    width:100%;
+    float:left;
+    width:80%;
 }
 
 .ppr-head {
     font-size:2em;
-    
+    background-color:cornflowerblue;
+    text-align:left;
+    width:98%;
+    float:left;
+    position:relative;
+    padding:1%;
+    margin: 0 0 1% 0;
 }
 
 .ppr-body {
