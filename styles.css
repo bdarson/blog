@@ -76,6 +76,7 @@ body {
     color:white;
     transition:color .25s;
 }
+
 .full-post-button a:hover {
     color:cornflowerblue;
 }
