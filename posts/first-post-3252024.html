@@ -2,39 +2,43 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="../reset.css">
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" media="screen and (orientation:landscape)" href="../styles.css">
+        <link rel="stylesheet" media="screen and (orientation:portrait)" href="../sheetz/phone1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="head-banner">
-            <img src="images/header-dr1.jpg" alt="">
-        </div>
         <svg class="head-deco" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
             <path d="M 100 0 L 0 0 L 0 10 C 35 3 65 3 100 10 L 100 0" fill="cornflowerblue"/>
         </svg>
-        <div class="wardrobe">
-            <div class="drawer" id="first">
-                <ul class="menu">
-                    <li><a href="https://www.darsondesign.com/index.html">HOME</a></li>
-                    <li><a href="https://www.darsondesign.com/about.html">ABOUT</a></li>
-                    <li><a href="https://www.darsondesign.com/work.html">WORK</a></li>
-                    <li><a href="../index.html" class="active">BLOG</a></li>
-                </ul>
-                <div class="label">
-                    <h1>SITEMAP</h1>
-                </div>
-            </div>
+        <div class="search-container">
+            <input class="searchbar" type="text" placeholder="Search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
 
-            <div class="drawer" id="second">
-                <p>Under Construction</p>
-                <div class="search-container">
-                    <input type="text" placeholder="Search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </div>
-                <div class="label">
-                    <h1>SEARCH</h1>
-                </div>
+        <div class="head-banner">
+            <img src="../images/header-dr2.png" alt="">
+        </div>
+
+        <div class="mobile-menu">
+            <div class="links-bar">
+                <a href="../index.html">BLOG HOME</a>
+                <a href="https://www.darsondesign.com" id="nfirst">WATSON DESIGN</a>
+                <a href="../archive.html" id="nfirst">ARCHIVE</a>
             </div>
+        </div>
+    
+        <div class="main-menu">
+            <div class="links-bar">
+                <a href="../index.html">BLOG HOME</a>
+                <a href="https://www.darsondesign.com" id="nfirst">WATSON DESIGN</a>
+                <a href="../archive.html" id="nfirst">ARCHIVE</a>
+            </div>
+        </div>
+
+        <div class="wardrobe">
 
             <div class="drawer" id="third">
                 <p>wordswords wordswords Is it just multiple lines</p>
@@ -60,15 +64,11 @@
             I played through the Kid A Mnesiac game on my PS5 between writing this. That's actually why I'm listening to Kid A tonight; I'm actually not that huge of a Radiohead fan, haven't really given them a shot but I liked that thing a lot. Figured I should listen to the album after playing the artsy game designed around knowing it lol.
         </div>
 
-    <div class="dummy">
-        <div class="ppr-head">test</div>
-    </div>
-
     <div class="post-preview">
         <div class="l-img"><img src="../images/post_thumbs/generic.png"></div>
         <div class="post-text">
             <div class="ppr-head">Welcome to the Blog!</div>
-            <hr>
+            <hr class="ls-off">
                 <div class="date-time">
                     <p>MARCH XX 2024 | XX:XX XM</p>
                 </div>

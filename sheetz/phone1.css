@@ -1,0 +1,370 @@
+
+    body {
+        background:linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(173, 216, 230, 1) 100%), url(../images/check-bg.jpg);
+        background-size:15%;
+        background-attachment:fixed;
+    }
+
+    /* HEAD ELEMENTS */
+
+    .spacer {
+        position:relative;
+        top:0;
+    }
+
+    .head-deco {
+        position:fixed;
+        z-index:2;
+        width:100%;
+        pointer-events:none;
+        filter:drop-shadow(0 3px 3px rgba(89, 110, 177, 0.9));
+        overscroll-behavior:none;
+    }
+
+    .head-banner {
+        position:relative;
+        z-index:3;
+        width:fit-content;
+        padding:3%;
+        margin: 0 auto;
+        filter:drop-shadow(0 3px 2px rgba(89, 110, 177, .7))
+    }
+
+    .head-banner img {
+        width: 900px;
+    }
+
+    .inner-banner {
+        position:relative;
+        background-color:white;
+        margin:0 auto;
+        padding:2% 0 2% 0;
+        width:100%;
+        text-align:center;
+    }
+
+    .headtitle {
+        font-size:4em;
+        font-family:sans-serif;
+        font-weight:1000;
+        padding:0 2% 0 2%;
+    }
+
+    /* BODY ELEMENTS */
+
+    .dummy {
+        width:100%;
+        color:white;
+    }
+
+    .post-preview {
+        position:relative;
+        font-family:"Nunito";
+        z-index:1;
+        width:80%;
+        height:fit-content;
+        background-color:black;
+        color:white;
+        margin: 0 auto;
+        margin-bottom:10px;
+        padding:5%;
+        border-radius:30px;
+    }
+    .post-preview:after { /*CLEARFIX; USE THIS IF THINGS ARE GOING OUT OF DIVS*/
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .post-text {
+        position:relative;
+        float:left;
+        width:79.9%;
+        font-size:2em;
+    }
+
+    .ppr-head {
+        font-size:2em;
+        background-color:cornflowerblue;
+        text-align:left;
+        width:105.8%; /*No way this scales clean. Find a permanent solution.*/
+        float:left;
+        position:relative;
+        padding:1%;
+        margin: 0 0 1% 0;
+    }
+
+    .ppr-body {
+        font-size:1em;
+    }
+
+    .full-post-button a {
+        font-size:1.5em;
+        text-decoration:none;
+        color:white;
+        transition:color .25s;
+    }
+
+    .full-post-button a:hover {
+        color:cornflowerblue;
+    }
+
+    #first-cont {
+        position:relative;
+    }
+
+    .l-img {
+        position:relative;
+        float:left;
+        width:15%;
+        margin:0 2.5% 0 0;
+        padding:1%;
+        border:solid white 2px;
+    }
+
+    .l-img img {
+        width:100%;
+    }
+
+    /* DRAWER COMMON */
+
+    .wardrobe {
+        display:none;
+    }
+
+    .drawer {
+        display:none;
+        position:fixed;
+        z-index:4;
+        color:white;
+        background-color:black;
+        border-left:5px solid cornflowerblue;
+        font-family:sans-serif;
+        border-radius: 10px 0 0 10px;
+        width:25%;
+        height:15%;
+        min-height:175px;
+        right:-18%;
+        transition:right .2s;
+        overscroll-behavior: none;
+    }
+
+    .drawer p {
+        position:relative;
+        z-index:4;
+        font-weight:1000;
+        padding:8% 8% 8% 22%;
+        float:left;
+    }
+
+    .drawer a:hover {
+        color:cornflowerblue;
+    }
+
+    .drawer:hover {
+        right:0;
+    }
+
+    .label {
+        position:absolute;
+        float:left;
+        width:2.5em;
+        font-size:3em;
+        font-weight:1000;
+        transform:rotateZ(-90deg);
+        top:180;
+        left:-25px;
+        cursor: default;
+    }
+
+    .abt-drawer {
+        display:none;
+        position:fixed;
+        z-index:4;
+        color:white;
+        background-color:black;
+        border-left:5px solid cornflowerblue;
+        font-family:sans-serif;
+        border-radius: 10px 0 0 10px;
+        height:30%;
+        min-height:400px;
+        width:60%;
+        top:15%;
+        right:-53%;
+        transition:right .2s;
+        overscroll-behavior: none;
+    }
+
+    .abt-label {
+        position:absolute;
+        float:left;
+        font-size:3em;
+        font-weight:1000;
+        transform:rotateZ(-90deg);
+        left:-210;
+        top:300;
+        cursor:default;
+    }
+
+    .abt-text {
+        float:left;
+        font-size:125%;
+        padding: 2.5% 2.5% 2.5% 12.5%;
+    }
+
+    .abt-drawer:hover {
+        right:0;
+    }
+
+    .drawer-cont {
+        padding: 5% 5% 5% 10%;
+    }
+
+    /* DRAWER SPECIFIC */
+
+    .drawer#first {
+        bottom:35%;
+    }
+
+    .drawer#second {
+        bottom:19%;
+    }
+
+    .drawer#third {
+        bottom:3%;
+    }
+
+    #l1 {
+        top:0;
+    }
+
+    #l2 {
+        top:0;
+    }
+
+    #l3 {
+        top:0;
+    }
+
+    .menu {
+        font-weight:1000;
+        font-size:2em;
+        padding:10% 10% 10% 30%;
+    }
+
+    .menu li {
+        padding: 0 0 2.5% 0;
+    }
+
+    li a {
+        text-decoration: none;
+        color:white;
+    }
+
+    .active {
+        color:grey;
+    }
+
+    .search-container {
+        display:none;
+        position:relative;
+        height:25%;
+        padding-left:20%;
+    }
+
+    .drawer input[type=text] {
+        position:relative;
+        margin: 10% 0 0 5%;
+        padding: 0 0 0 5%;
+        height:100%;
+        width:50%;
+        float:left;
+    }
+
+    .search-container button {
+        display:none;
+        position:relative;
+        background:white;
+        margin:10% 10% 0 0;
+        height:100%;
+        width:15%;
+        float:left;
+        border:none;
+    }
+
+    .search-container button:hover {
+        background:cornflowerblue;
+        transition: background .25s;
+    }
+
+    .login-text {
+        padding:5%;
+        font-weight:1000;
+    }
+
+    /* POST ELEMENTS */
+    .in-post-img {
+        position:relative;
+        clear:both;
+        margin:2% auto;
+        width:100%;
+        display:block;
+    }
+
+    .shrink {
+        width:50%;
+        transition: width .5s;
+    }
+
+    .shrink:hover {
+        width:100%;
+    }
+
+    /* EXPERIMENTAL */
+    .mobile-menu {
+        position:sticky;
+        top:15;
+        width:85%;
+        height:75px;
+        text-align:center;
+        background-color:white;
+        border-radius:50px;
+        margin: 0 auto;
+        margin-bottom:10px;
+        z-index:4;
+        border:cornflowerblue solid 15px;
+    }
+
+    .mobile-menu a {
+        display:inline-block;
+        position:relative;
+        margin:10px 0 10px 0;
+        padding:0 3% 0 3%;
+        text-decoration: none;
+        font-family:"Nunito";
+        font-size:2em;
+        font-weight:1000;
+        color:black;
+        line-height:1.7em
+    }
+
+    #nfirst {
+        border-left:7px solid cornflowerblue;
+    }
+
+    .ls-off {
+        display:none;
+    }
+
+    .date-time {
+        position:relative;
+        font-size:1.25em;
+    }
+
+    .lb-line {
+        
+    }
+
+    .main-menu {
+        display:none;
+    }
